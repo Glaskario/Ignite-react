@@ -1,6 +1,6 @@
 
 export function Post(props) {
-   console.log(props;)
-   return <p>Post</p>
+   console.log()
+   return (<div><strong>{props.author}</strong><p>{props.content}</p></div>)
     
 }
