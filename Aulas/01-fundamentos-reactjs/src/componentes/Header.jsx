@@ -1,7 +1,7 @@
 import styles from './Header.module.css'
 
 import igniteLogo from '../images/ignite-logo.svg';
-import { Post } from '../Post';
+import { Post } from './Post';
 
 export function Header(){
     return (
