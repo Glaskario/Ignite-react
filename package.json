@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.9"
+    "@phosphor-icons/react": "^2.0.9",
+    "date-fns": "^2.30.0"
   }
 }
