@@ -5,7 +5,11 @@ import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import styles from './Post.module.css'
 
-
+const comments =  [
+    1,
+    2,
+    3,
+];
 
 
 export function Post({author, publishedAt, content}) {
@@ -42,7 +46,7 @@ export function Post({author, publishedAt, content}) {
                 }
             })}
         </div>
-        <form className={styles.commentForm}>
+        <form onSubmit={} className={styles.commentForm}>
             <strong>Deixe seu feedback</strong>
 
             <textarea  placeholder="Deixe um comentário"></textarea>
@@ -52,9 +56,9 @@ export function Post({author, publishedAt, content}) {
             </footer>
         </form>
         <div className={styles.commentList}>
-            <Comment />
-            <Comment />
-            <Comment />
+           {comments.map(comment => {
+            return <Comment />
+           })}
         </div>
       </article>
     )
